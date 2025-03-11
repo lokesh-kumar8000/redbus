@@ -1,0 +1,1229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none; 
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 400; 
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    background-color: #fff; 
+    z-index: 9999;
+}
+.header{
+    height: 100px;
+    margin: auto;
+    max-width: 1200px; 
+    /* background-color: blue; */
+    display: flex; 
+    align-items: center; 
+    flex-wrap: wrap;  
+    /* position: sticky;   */
+
+
+}
+.redbus_ticket{
+    font-size: 14px;
+    color: white;
+    background-color: #c91127;
+    padding: 14px 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 112px;
+    margin-right: 16px;
+}
+
+.redbus_ticket img{
+    filter: brightness(0) invert(1); 
+    margin-bottom: 4px;
+}
+
+.train_ticket{
+    font-size: 14px;
+    color: #000;
+    padding: 14px 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 112px;
+    margin-right: 16px;
+    position: relative;
+    transition: 0.5s; 
+ }
+
+
+
+.off60{
+    position: absolute;
+    top: 1%;
+    right: 0px;
+    background-color: #60b681;
+    color: #fff;
+    font-size: 12px; 
+    padding: 2px 4px;
+    border-radius: 7px;
+}
+.train-img{
+    margin-bottom: 4px;
+    filter: brightness(0) invert(0);
+}
+
+.train_ticket:hover{
+    background-color: #74747434;
+}
+
+
+.train_ticket:hover .train-img{
+    filter: brightness(1) invert(0);
+}
+
+.header_last{
+
+    margin-left: 376px;
+    display: flex;
+    gap: 20px;
+}
+.help{
+    padding: 6px 8px; 
+    font-size: 16px;
+    transition: 0.5s;
+    display: flex;
+    gap: 4px;
+}
+.help:hover{
+    background-color: #93939390;
+    border-radius: 5px;
+}
+.help span{
+    margin: 0px 4px 0px 2px;
+}
+
+.help i{
+    font-size: 22px;
+}
+.help select{
+    border: none;
+    outline: none; 
+    font-size: 16px;
+    transition: 0.5s;
+    width: 80px;
+
+}
+.help:hover select{
+    background-color:#93939390 ;
+}
+.search_bus_img {
+   position: relative;
+}
+.search_bus_img h1{
+    position: absolute;
+    top: 25px; 
+    width: 100%;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center; 
+    margin: 22px 0px;
+    
+} 
+.searching_box{
+    display: flex;
+    justify-content: center; 
+}
+.searching_box1{
+    width: 1150px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    top: 190px; 
+    border-radius: 30px; 
+    display: flex;
+
+}
+
+.searching_box_from{
+    height: 100%;
+    width: 310px;
+    border-right: 1px solid #4a4a4a;
+}
+
+.searching_box_from{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+    cursor: pointer;  
+}
+.from{
+    display: flex; 
+    flex-direction: column; 
+    width: 210px; 
+   
+
+} 
+.from label{
+    cursor: pointer;
+}
+.from input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+} 
+
+.left_right{
+    
+    height: 40px;
+    width: 40px; 
+    border: 1px solid #4a4a4a;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top: 30px;
+    left: 285px;
+    background-color: #fff; 
+    transition: 5ms;
+    cursor: pointer;
+
+}
+
+.left_right:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+} 
+
+.data_box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 310px;
+} 
+
+.data{
+    margin-left: 24px;
+}
+.data input{
+    margin-left: 20px; 
+}
+.search_bus1{
+    height: 100%;
+    background-color: rgb(216, 78, 85);
+    width: 220px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.search_bus1 button{
+    padding: 29px 20px;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    background-color: rgb(216, 78, 85); 
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;  
+    cursor: pointer;
+}
+
+.trandin_offer{
+    display: flex;
+    justify-content: center;
+    margin-top: -3.5rem;
+    margin-bottom: 4rem;
+
+}
+
+.tranding_offers_inside{
+    /* height: 150px; */
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 25px;
+    position: relative;
+    margin: 0px 7.5rem; 
+    padding: 2rem;
+    border-radius: 32px; 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    overflow: hidden;
+}
+
+.trandin_offer_text{
+    display: flex;
+    justify-content: space-between; 
+    align-items: baseline;
+    
+} 
+
+.trandin_offer_text h2{
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+.trandin_offer_text a{
+    color: rgb(16, 52, 217);
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 1.5rem; 
+    border: 1px solid rgb(170, 170, 170); 
+    font-size: 18px;
+    cursor: pointer;
+}
+.trandin_offer_text a:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tranding_offer_slides{
+    display: flex;
+    gap: 1.5rem; 
+    width: 3000px; 
+    transition: 2s linear ;
+
+
+}
+
+.tranding_offer_slides1{
+    padding: 16px; 
+    width: 300px; 
+    background-image: linear-gradient(71.04deg, rgb(12, 57, 139) -6.92%, rgb(62, 118, 216) 109.43%); 
+    cursor: pointer; 
+    display: flex;
+    gap: 1rem;
+    border-radius: 1rem; 
+}
+
+.slider-container input[type="radio"]{
+    display: none; 
+}
+
+.buttons-box {
+    display: flex;
+    position: absolute;
+    transform: translate(550px); 
+}
+.buttons-box label{
+    height: 15px;
+    width: 15px;
+    border: 2px solid gray; 
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.5ms ease;
+}
+.buttons-box label:hover{
+    background-color: gray;
+}
+
+#slider1:checked ~ .tranding_offer_slides { 
+    transform: translateX(0%);
+}
+#slider2:checked ~ .tranding_offer_slides{ 
+    transform: translateX(-33%); 
+}
+#slider3:checked ~ .tranding_offer_slides{
+    transform: translateX(-59%);
+}
+
+
+
+.tranding_offer_slides1_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tranding_offer_slides1_img img{
+    height: 70px; 
+    width: 70px; 
+    border-radius: 2.5rem; 
+
+} 
+.tranding_offer_slides1_text{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.tranding_offer_slides1_text> :nth-child(1){
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 1.25rem;
+    font-size: 12px;
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    width: fit-content;
+}
+.tranding_offer_slides1_text> :nth-child(2){
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700; 
+}
+.tranding_offer_slides1_text> :nth-child(3){
+    font-size: 12px;
+    line-height: 1rem;
+    font-weight: 400;
+}
+.tranding_offer_slides1_text .first{
+    display: flex;
+    gap: 0.75rem;
+}
+.tranding_offer_slides1_text .first> :nth-child(1){
+    border: 1px dashed rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0.25rem 0.50rem;
+}
+
+.tranding_offer_slides1_text .first> :nth-child(2) i{
+    font-size: 1.5rem;
+  
+}
+
+.tranding_two{
+    background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210, 149) 109.43%);
+}
+
+.tranding_three{
+    background-image: linear-gradient(71.04deg, rgb(72, 0, 4) -6.92%, rgb(216, 78, 85) 109.43%);
+} 
+
+.tranding_four{
+background: linear-gradient(71.04deg, rgb(14, 113, 67) -6.92%, rgb(115, 236, 179) 109.43%);
+}
+.tranding_five{
+
+    background-image: linear-gradient(71.04deg, rgb(24, 125, 151) -6.92%, rgb(109, 213, 237) 109.43%);
+}
+
+.tranding_six{
+    background: linear-gradient(71.04deg, rgb(206, 119, 0) -6.92%, rgb(255, 194, 111) 109.43%);
+}
+
+.tranding_seven{
+    background: linear-gradient(71.04deg, rgb(134, 0, 62) -6.92%, rgb(210, 81, 141) 109.43%);
+} 
+.tranding_eight{
+    background: linear-gradient(71.04deg, rgb(60, 16, 83) -6.92%, rgb(173, 83, 137) 109.43%);
+}
+
+.tranding_nine{
+    background: linear-gradient(71.04deg, rgb(63, 43, 150) -6.92%, rgb(168, 192, 255) 109.43%);
+}
+
+
+
+.goverment_bus{
+    display: flex;
+    flex-direction: column;
+    width: 1215px;
+    margin: auto;
+    margin-top: 3rem;
+    height: 22rem;
+    overflow: hidden;
+}
+
+.goverment_bus_text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    margin-left: 15px;
+}
+
+.goverment_bus_text> :nth-child(1){
+    color: #1d1d1d;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.goverment_bus_text> :nth-child(2){
+    color: rgb(16, 52, 217);
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 1.5rem; 
+    border: 1px solid rgb(170, 170, 170); 
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.goverment_bus_slide{
+    display: flex;
+    padding: 15px;
+    gap: 1.5rem;
+    width: 5000px; 
+    position: relative;
+    transform: translateX(0%); 
+    transition: 2s linear ;
+}
+
+.goverment_bus_slider input{
+    display: none; 
+}
+.goverment_bus_slider_label {
+    display: flex;
+    position: absolute; 
+    transform: translateX(550px);
+}
+
+.goverment_bus_slider_label label{
+    height: 15px;
+    width: 15px;
+    border: 2px solid gray; 
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.5ms ease;
+} 
+
+.goverment_bus_slider_label label:hover{
+    background-color: gray ;
+}
+
+#bus1:checked ~ .goverment_bus_slide{
+    transform: translateX(0%);
+}
+
+#bus2:checked ~ .goverment_bus_slide{
+    transform: translateX(-20%);
+}
+
+#bus3:checked ~ .goverment_bus_slide{
+    transform: translateX(-40%);
+}
+#bus4:checked ~ .goverment_bus_slide{
+    transform: translateX(-60%);
+}
+#bus5:checked ~ .goverment_bus_slide{
+    transform: translateX(-78%);
+}
+
+.goverment_bus_slide1{
+    width: 480px;
+    border-radius: 16px;
+    background: #fae9ea;
+    cursor: pointer;
+    box-shadow: 0 1px 12px 0 rgba(29, 29, 29, .1);
+    
+}
+
+.rsrtc{
+    background: #fff;
+    width: 480px; 
+    border-radius: 16px; 
+    height: 198px; 
+}
+
+.rsrtc1{
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 16px;
+}
+.rsrtc1> :nth-child(1){
+    height: 54px;
+    width: 54px; 
+}
+
+.rsrtc_info{
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 8px; */
+    justify-content: center;
+}
+
+.rsrtc_info> :nth-child(1){
+    display: flex;
+    gap: 12px;
+}
+
+.rsrtc_name{
+    color: 1d1d1d;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.rsrtc_ratting{ 
+    background-color: #007b2d;
+    display: flex;
+    gap: 3px; 
+    padding: 3px 6px;
+    color: #fff;
+    border-radius: 8px; 
+    max-width: min-content;
+} 
+
+.rsrtc_info> :nth-child(2){
+    color: rgb(111, 111, 111);
+    font-size: 18px;
+    margin-top: 4px;
+    padding: 2px;
+
+}
+
+.rsrtc2{
+    padding: 16px; 
+   
+}
+.rsrtc2 p{
+    font-size: 16px;
+    margin: 0px 4rem;
+    text-align: center; 
+    line-height: 20px;
+
+}
+
+.rsrtc_offical_booking{ 
+    margin: 0px 16px;
+    background-color: #f2f2f8; 
+    border-radius: 8px;  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    color: #1d1d1d; 
+    line-height: 16px; 
+    height: 24px;
+
+}
+
+.rsrtc_offical_booking> :nth-child(1){
+    width: 25px;
+    height: 16px;
+} 
+
+.rsrtc_footer p{
+    font-weight: 700;
+    font-size: 12px; 
+    color: #1d1d1d; 
+    text-align: center; 
+    line-height: 16px; 
+    margin: 0.25rem 0.5rem;
+} 
+
+
+.main{
+    max-width: 1200px;
+    margin: 0px auto 2rem;
+} 
+
+.main1{
+    margin: 3.75rem 0px; 
+    display: flex; 
+    justify-content: space-between;
+} 
+
+.main1_text{
+    width: 552px;
+}
+
+.main1_text_first_section{
+    margin-bottom: 2rem; 
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+}
+
+.main1_text_first_section> p{
+    font-size: 2.5rem; 
+    font-weight: 400; 
+    color: rgb(29, 29, 29);
+}  
+
+.main1_text_first_section> div{
+
+    max-width: fit-content;
+    color: rgb(216, 78, 85);
+    font-size: 16px;  
+    font-weight: 700; 
+    padding: 0.875rem 1rem; 
+    display: flex; 
+    gap: 0.75rem; 
+    text-align: center;  
+    border-bottom: 3px solid rgb(216, 78, 85); 
+    
+}
+.main1_text_2nd_section> div{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(29, 29, 29);
+    margin-bottom: 1.5rem;
+    line-height: 2.125rem;
+}
+
+.refound{
+    display: flex; 
+    gap: 1.3rem; 
+    align-items: center; 
+    margin-bottom: 1rem;
+} 
+.refound p{ 
+    font-weight: 700;
+    line-height: 17px;
+    color: rgb(29, 29, 29);
+
+} 
+.book_train_ticket{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 2rem; 
+    padding: 0.9rem 1rem; 
+    line-height: 24px;
+    font-weight: 700; 
+    cursor: pointer;
+    color: #fff; 
+    background-color: rgb(216, 78, 85);
+    border: 1px solid rgb(216, 78, 85);
+    border-radius: 1rem;
+    gap: 0.75rem; 
+    font-size: 1rem;
+}
+
+.main1_img{
+    width: 568px;
+    /* position: relative; */
+    position: relative;
+    top: 0px;
+    left: 0px; 
+}
+
+
+.train1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.main2{
+    margin: 5.75rem 0px; 
+}
+
+.main2_inside{ 
+    background: url("../image/appInstallbg.svg");
+    padding: 2rem; 
+    display: flex; 
+    background-size: cover ;
+    background-position: right center;
+    height: 442px;
+    flex-direction: column; 
+    gap: 2rem;
+    border-radius: 3rem;
+
+}  
+.main2_inside> :nth-child(1){
+    color: #fff;
+    font-size: 1.75rem; 
+    font-weight: 600;
+    line-height: 3rem; 
+}
+.main2_inside> :nth-child(2){
+    display: flex;
+    gap: 4rem; 
+}
+
+
+.social_media_ratting_box{
+    width: 23.5rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    border-radius: 1rem; 
+    display: flex;
+    flex-direction: column; 
+    gap: 3.8rem;
+} 
+
+.social_media_ratting_box1{
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+}
+.social_media_ratting_box1 div{
+    display: flex;
+    gap: 0.5rem;
+}
+.quick{
+    font-size: 1.125rem;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.play_store{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social_media_ratting_box2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.play_store1{
+    display: flex;
+    gap: 0.38rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+.play_store2{
+    font-size: 14px; 
+    line-height: 17px;
+}
+
+.play_store3{
+    color: rgb(29, 29, 29);
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+.border{
+    width: 2px;
+    background-color: rgb(193, 193, 193); 
+} 
+
+.downloder{
+    margin-top: 3rem; 
+    display: flex; 
+    gap: 5rem;
+}
+
+.scaner{
+    width: 106px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scan1{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #fff; 
+
+}
+
+.downlod{
+    width: 147px;
+    display: flex; 
+    flex-direction: column;
+    gap: 1rem;
+} 
+
+.main3{
+    margin: 5.75rem 0px;
+}
+
+.main3_inside{
+    background-color: rgb(251, 202, 65);
+    border-radius: 2.5rem; 
+    height: 552px;
+    display: flex;
+
+}
+
+.main3_inside:nth-child(1) img{
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+} 
+
+.ontime_box{
+    height: 552px;
+    width: 25rem; 
+    background-color: rgb(35, 48, 88);
+    border-radius: 40px;
+    padding: 80px 42px;
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    gap: 64px; 
+    justify-content: center;
+}
+
+.ontime{
+    display: flex;
+    gap: 1.5rem; 
+    /* justify-content: center; */
+    align-items: center;
+}
+.icon{
+    font-size: 60px;
+}
+/* .icon i{
+    font-size: 60px;
+} */
+
+.ontime_heading{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    padding-bottom: 10px;
+}
+
+.ontime_pera{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+} 
+.space{
+    padding: 50px 0px;
+} 
+
+.country{
+    padding: 5.625rem 0px; 
+
+    h2{
+        margin-bottom: 2rem;
+        font-size: 1.75rem;
+        color: rgb(29, 29, 29);
+        font-weight: 600;
+        line-height: 3rem;
+    }
+}
+
+.country_img{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.india{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    cursor: pointer;
+    width: fit-content;
+    transition: 0.3s; 
+    align-items: center;
+}
+
+.india_text{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.6rem 1rem ;
+    width: fit-content;
+    transition: 0.3s;
+    border-radius: 1rem;
+} 
+
+.india:hover .india_text{
+    background-color: rgba(202, 202, 202, 0.82);
+   
+} 
+
+.bus_bookinf_online{
+    margin-bottom: 5.625rem;
+} 
+
+.bus_bookinf_online> :nth-child(1){
+    font-size: 2.5rem; 
+    font-weight: 400; 
+    color: #1D1D1D; 
+    line-height: 2.5rem; 
+    margin: 2rem 0px;
+}
+
+.bus_bookinf_online p{
+    margin: 1rem 0px;
+    color: #1D1D1D;
+    font-weight: 400;
+    line-height: 2rem; 
+    font-size: 1rem;
+
+
+}
+.bus_booking_red_details{
+    margin-bottom: 5.625rem;
+    color: #1d1d1d;
+} 
+
+.bus_booking_red_details h1{
+    margin: 1rem 0px; 
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.bus_booking_red_details p{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.bus_booking_red_details_box{
+    border: 1px solid #e0e0e0;
+    margin: 1.5rem 0px;
+    border-radius: 1.25rem;
+    padding: 1.75rem 1.5rem; 
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+}
+
+.bus_booking_red_details_box> :nth-child(1){
+    height: 56px;
+    width: 56px; 
+    margin: 0 1.75rem;
+}
+
+.midle_box{
+    font-size: 24px;
+    /* margin: 24px 0px 16px;  */
+    font-weight: 600; 
+    width: 881px;
+    
+
+}
+.midle_box> :nth-child(1){
+    margin: 24px 0px 16px;
+}
+.midle_box> :nth-child(1) span{
+    color: #d84e55;
+    font-size: 1.75rem;
+    
+}
+.midle_box> :nth-child(2){
+    font-weight: 600; 
+    font-size: 1rem;
+}
+
+.button_red_bus{
+    background-color: #d84e55;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+    height: 3rem;
+    width: 8.313rem;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    
+   
+    background-color: #F7F7F7; 
+    
+
+} 
+
+.footer{
+    width: 1200px; 
+    margin: auto; 
+    padding: 48px 0px 32px;
+}
+
+.footer_midle{
+    display: flex;
+    justify-content: space-between;
+    height: 300px; 
+    margin-bottom: 30px; 
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+.footer_midle_first{
+    width: 272px; 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+    color: #3e3e52;
+    
+}
+.footer_midle_first p{
+    line-height: 20px;
+} 
+
+.footer_midle_second ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer_midle_second h3{
+    font-size: 18px;
+    color: #1d1d1d;
+}
+.footer_midle_second a{
+    color: #3e3e52;
+}
+
+.footer_footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.media_platfrom{
+    display: flex;
+    gap: 1.5rem; 
+    font-size: 24px;
+} 
+
+.faq_details h2{
+    margin-bottom: 2.5rem;
+    line-height: 2.5rem; 
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.faq_details_heading{
+    font-size: 16px;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+} 
+
+.faq_details_heading div{
+    padding: 12px 8px; 
+    line-height: 1.5rem; 
+    width: fit-content;
+    cursor: pointer;
+    /* border-bottom: 3px solid rgb(205, 198, 198); */
+} 
+
+.faq_ticket:hover{
+    border-bottom: 3px solid rgb(205, 198, 198);
+} 
+
+.faq_General{ 
+    color: #D84E55; 
+    border-bottom: 2px solid #D84E55;
+}
+.faq_details_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+details{
+    border-radius: 1rem;
+    border: 1px solid #F3F4F9;
+    font-size: 14px;
+    line-height: 20px; 
+    color: #1D1D1D; 
+    cursor: pointer;
+    padding: 1.75rem 1.5rem;
+}
+summary{
+    font-weight: 700;
+}
+
+summary::after{
+    content: "+";
+    font-weight: bold;
+    float: right;
+    font-size: 18px;
+    transition: .1s ease; 
+    
+}
+
+details[open] summary::after{
+    content: "-";
+    font-size: 25px;
+   
+}
+
+.faq_pera{
+    margin: 14px 0px; 
+    background-color: rgb(243, 244, 249);
+}
+details>p>a{
+    color: #0000A8;
+}
+
+.footer_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    margin-bottom: 3rem;
+}
+.footer_heading details{
+    font-size: 20px; 
+    border-bottom:2px solid #b0b3c0;
+    border-radius: 0px;
+    padding: 18px 0px;
+
+}
+
+.footer_heading summary::after{ 
+    content: ">"; 
+    transform: rotate(90deg);
+    float: right; 
+    /* font-size: 25px; */
+    transition: 0.5s linear;
+
+} 
+.footer_heading details p{
+    margin: 8px 0px;
+}
+.footer_heading details p a{
+    line-height: 2rem;
+    color: #444343;
+    font-size: 14px; 
+    
+}
+
+.footer_heading details[open] summary::after{
+    content: ">";
+    font-size: 16px;
+    transform: rotate(270deg); 
+}
+
+/* train ticket start  */
+.train_header{
+    width: 1280px; 
+    margin: auto;
+    /* background-coor: rgb(255, 242, 0); */
+    padding: 0px 32px; 
+    display: flex;
+} 
+
+.train_header> :nth-child(1){
+    margin-right: 2rem;
+    width: fit-content;
+} 
+
+.train_bus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 4rem;
+    margin-right: 1rem;
+    width: 6.625rem;
+    color: #000;
+    transition: 0.2s;
+}
+.train_bus img{
+    filter: brightness(0) invert(0);
+}
+.train_bus:hover img{
+    filter: brightness(1) invert(0);
+}
+
+.train_bus:hover{
+    color: #d63941;
+}
+
+
+/* train ticket end */

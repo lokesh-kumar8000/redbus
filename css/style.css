@@ -20,6 +20,7 @@ header{
     top: 0px;
     background-color: #fff; 
     z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .header{
     height: 100px;
@@ -1115,7 +1116,7 @@ footer{
     gap: 1.5rem;
 }
 
-details{
+.details{
     border-radius: 1rem;
     border: 1px solid #F3F4F9;
     font-size: 14px;
@@ -1124,11 +1125,11 @@ details{
     cursor: pointer;
     padding: 1.75rem 1.5rem;
 }
-summary{
+.summary{
     font-weight: 700;
 }
 
-summary::after{
+.summary::after{
     content: "+";
     font-weight: bold;
     float: right;
@@ -1137,7 +1138,7 @@ summary::after{
     
 }
 
-details[open] summary::after{
+.details[open] .summary::after{
     content: "-";
     font-size: 25px;
    
@@ -1158,14 +1159,883 @@ details>p>a{
     margin-bottom: 3rem;
 }
 .footer_heading details{
-    font-size: 20px; 
+    font-size: 18px; 
     border-bottom:2px solid #b0b3c0;
     border-radius: 0px;
     padding: 18px 0px;
+    font-weight: 700;
 
 }
 
 .footer_heading summary::after{ 
+    content: ">"; 
+    transform: rotate(90deg);
+    float: right; 
+    /* font-size: 25px; */
+    transition: 0.5s linear;
+
+} 
+.footer_heading details p{
+    margin: 8px 0px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.footer_heading details p a{
+    line-height: 2rem;
+    color: #444343;
+    font-size: 14px; 
+    
+}
+
+.footer_heading details[open] summary::after{
+    content: ">";
+    font-size: 16px;
+    transform: rotate(270deg); 
+}
+
+/* train ticket start  */ 
+.train_header{
+    width: 1280px; 
+    height: 65px;
+    margin: auto;
+    /* background-coor: rgb(255, 242, 0); */
+    padding: 0px 32px; 
+    display: flex; 
+    align-items: center;
+} 
+
+.train_header> :nth-child(1){
+    margin-right: 2rem;
+    width: fit-content;
+} 
+
+.train_bus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 4rem;
+    margin-right: 1rem;
+    width: 6.625rem;
+    color: #000;
+    transition: 0.2s; 
+    cursor: pointer;
+    font-size: 11px; 
+    font-weight: 500;
+}
+.train_bus img{
+    filter: brightness(0) invert(0);
+}
+
+.train_bus:hover{
+    color: #d63941;
+    img{
+        filter: brightness(1) invert(0);
+    }
+
+} 
+
+.train_train_ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 4rem;
+    margin-right: 1rem;
+    width: 6.625rem;
+    color: #d63941;
+    transition: 0.2s; 
+    cursor: pointer;
+    border-bottom: 3px solid #d63941; 
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.train_header_last{
+    margin-left: auto; 
+    display: flex;
+    /* align-items: center; */
+    height: 3rem; 
+    gap: 1.25rem;
+}
+
+.train_booking{
+   
+    color: rgba(29,29,29,.639); 
+    display: flex;
+    align-items: center; 
+    font-size: .75rem; 
+    font-weight: 500;
+    gap: .5rem;
+    line-height: 1rem;
+    padding: 0 .5rem; 
+}
+.train_booking i{
+    font-size: 20px;
+} 
+
+.train_booking:hover{
+    background-color: #f2f2f8; 
+    border-radius: 32px; 
+}
+
+.train_main{
+    position: relative;
+}
+.train_banner{
+    width: 100%;
+    z-index: -1; 
+    /* position: relative; */
+    
+} 
+
+
+.train_from_to{
+    position: absolute; 
+    margin: 0px 128px; 
+    padding: 0px 32px;
+    top: 50px; 
+    color: #fff; 
+    width: 1280px;
+}
+
+.train_from_to :nth-child(1){
+    line-height: 3.25rem;
+    font-size: 2.812rem; 
+} 
+
+.train_from{
+    margin: 0px 128px; 
+    padding: 0px 32px;
+    
+}
+
+
+.irctc{
+    color: #fff;
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+    line-height: 28px;
+    width: max-content;
+    font-size: 22px;
+    font-weight: 400; 
+    padding: 35px 0px; 
+    position: absolute; 
+    top: 100px;  
+}
+
+.summer_booking_holiday{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    width: max-content;
+    background: linear-gradient(273deg, #fbeaac 4.55%, #e0eded 100%);
+    padding: 0.5rem 1rem 2rem 1rem;
+    border-radius: 1rem 1rem 0 0;
+    position: absolute;
+    top: 200px;
+}
+
+.train_from_section{
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 11px rgba(29,29,29,.188);
+    padding: 1rem 1rem 2.75rem; 
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    top: 230px; 
+}
+
+.train_from_section1{
+    width: max-content; 
+    border: 1px solid #b0b0b0;
+    border-radius: 16px;
+    height: 64px; 
+    display: flex;
+    align-items: center;
+
+   
+}
+
+.from_train{
+    padding: 0.75rem 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center; 
+    height: 100%;
+    font-size: 1rem;
+    border-right: 1px solid #b0b0b0;
+    i{
+        font-size: 24px;
+    }
+
+
+    input{
+        outline: none;
+        border: none;
+    }
+}
+
+.train_data{
+    padding: 0.25rem 0; 
+    display: flex;
+
+}
+
+.train_data_one{
+    display: flex; 
+    align-items: center; 
+    gap: 0.75rem;
+    padding: 0 1rem;
+
+    i{
+
+        font-size: 24px;
+    }
+}
+.data_of_jurney{
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.data_of_jurney :nth-child(1){
+    font-size: 0.75rem;
+    line-height: 1rem; 
+    color: rgba(29,29,29,.639);
+    font-weight: 400; 
+
+
+}
+.data_of_jurney :nth-child(2){
+    color: #1d1d1d;
+    font-weight: 700; 
+    line-height: 1.5rem; 
+    font-size: 1rem;
+}
+
+.train_data_two{
+    display: flex;
+    padding: 0 0.5rem;
+    gap: 6px;
+    
+} 
+
+.train_data_button{
+    background-color: #fed9d5;
+    border: none;
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 700;
+    height: 2.5rem; 
+    padding: 0 0.75rem;
+    border-radius: 999px; 
+    cursor: pointer;
+    transition: 0.1ms;
+
+} 
+
+.train_data_button:hover{
+    background-color: #cdaeab;
+}
+
+.train_from_section2{
+    border: 1px solid #b0b0b0;
+    padding: 0.75rem;
+    border-radius: 1rem; 
+    width: max-content;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+} 
+
+.free_collection {
+    display: flex; 
+    gap: 10px;
+
+
+
+    
+    img{
+        width: 24px;
+        height: 32px;
+        margin: 0px 4px;
+    }
+} 
+
+.free_collection_text :nth-child(1){
+    font-size: 1rem;
+    font-weight: 500; 
+    line-height: 1.5rem; 
+    color: #1d1d1d;
+
+} 
+
+.free_collection_text :nth-child(2){
+    color: rgba(29,29,29,.639);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.train_from_section2> :last-child{
+    font-size: 35px;
+} 
+
+
+.searching_button{
+    position: absolute;
+    bottom: -45px; 
+    left: 600px;
+    cursor: pointer; 
+    border: none;
+    background-color: #d63941;
+    color: #fcfcfc; 
+    width: 18.75rem;
+    line-height: 1.5rem; 
+    padding: 1.25rem;
+    height: 3rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; 
+    border-radius: 999px;
+    font-weight: 600; 
+    gap:10px; 
+
+    i{
+        font-size: 24px;
+    }
+}
+
+
+.train_faclties{
+    margin-top: 70px; 
+    background-color: #f2f2f8;
+    padding: 24px 0px;
+    /* width: 1280px;  */
+    
+}
+
+.train_faclties_item{
+    margin: 0px 128px;
+    padding: 0px 32px;
+    display: flex;
+    gap: 0.75rem;
+    width: 1280px; 
+}
+
+.train_faclties_item_box{
+    font-size: 1rem;
+    height: 7rem;
+    width: 295px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 12px rgba(29,29,29,.102);
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1d1d1d;
+
+    img{
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.train_body{
+    margin: 30px 128px;
+    padding: 0px 32px; 
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+/* .book_with_red_rail{
+
+    padding-left: 1rem;
+} */
+
+.book_with_red_rail_one{
+    padding: .75rem 0;
+    height: 4rem;
+    color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    h2{
+        font-size: 1.375rem;
+    }
+
+}
+
+.book_with_red_rail_two{
+    padding: .5rem 0rem; 
+    display: flex;
+    gap: .75rem;
+} 
+
+.book_with_red_rail_two_box{
+    height: 118px;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 323px;
+    box-shadow: 0 1px 12px rgba(29,29,29,.102);
+    display: flex; 
+    cursor: pointer;
+}
+
+.book_with_red_rail_two_box_left{
+
+
+    div{
+        color: #d63941;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+    }
+
+    p{
+        font-size: 14px;
+        color: #1d1d1d;
+        line-height: 1.25rem;
+        letter-spacing: -.1px;
+    }
+}
+
+.book_with_red_rail_two_box_img{
+    display: flex;
+    align-items: center;
+} 
+
+.book_train_with_festival{  
+
+}
+
+.book_train_with_festival_one{
+    /* padding: 0 1rem; */
+    /* background-color: red; */
+    margin: 12px; 
+    display: flex;
+    gap: 12px;
+
+    /* img{
+        margin-left: 1.75rem;
+    } */
+
+    .train_festival_text1{
+        color: #1D1D1D;
+        font-size: 1.375rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+    }
+
+    .train_festival_text2{
+        color: #1d1d1da3; 
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }
+}
+.book_train_now_seaction{
+    display: flex;
+    align-items: center;
+    gap: 4.75rem;
+    /* margin: 0 2rem;  */
+    padding: 1rem; 
+    height: 101px;
+    background-color: rgb(249, 246, 255);
+    border-radius: 16px; 
+}
+
+.book_train_with_festival_two{
+  
+    
+    border: 1px solid transparent;
+    border-radius: 20px; 
+    display: flex; 
+    gap: 12px;
+    align-items: center;
+
+    
+    .code_festival{
+        display: flex;
+
+
+        .code_festival_text{
+            color: #1d1d1d;
+            font-size: 1rem; 
+            font-size: 400;
+            line-height: 1.5rem; 
+            
+            strong{
+                color: #007B2D;
+            }
+            
+        }
+    }
+
+    .code_festival_button{
+        display: flex; 
+        gap: 0.5rem; 
+        position: relative;
+
+        .train_apr{
+            width: 183px;
+            height: 56px;
+            font-size: 14px;
+            color: #1d1d1d;
+            background-color: #fff;  
+            /* border: linear-gradient(to right, red, purple) 1px solid; */
+            border: red 1px solid; 
+            border-radius: 12px;
+
+        }
+
+        .button_hook1{
+            position: absolute;
+            top: -15px; 
+            left: 65px;
+        }
+        .button_hook2{
+            position: absolute;
+            top: -15px; 
+            left: 253px; 
+        }
+
+    }
+}
+
+.train_boook_now_button{
+    display: flex;
+    gap: 0.5rem; 
+    align-items: center; 
+    width: 218px; 
+    justify-content: center;
+}
+
+/* .train_videos{
+    padding: 0 1rem; 
+}  */
+
+.train_video_text{
+    padding: 0.75rem 0rem ;
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.75rem;
+}
+
+.train_videos_contact{
+    padding: .5rem 0rem; 
+    display: flex; 
+    gap: 0.75rem;
+}
+
+.train_videos_contact_box{
+    height: 153px;
+    border-radius: 16px;  
+    background-color: #fff;
+    box-shadow: 0 1px 12px rgba(29,29,29,.102); 
+    width: 124px;
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem;
+    overflow: hidden; 
+} 
+
+.train_video_box_header{
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500; 
+    line-height: 1rem;
+    padding: 1rem; 
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;  
+}
+
+.train_video_box_header_img{
+    background: url("../image/train/booking1.png"); 
+    background-position: 50%;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.train_play_button{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-size: 32px;
+    color: rgb(226, 226, 226); 
+} 
+
+.get_red_rail_app{
+    /* margin: 0 1rem; */
+    padding: 1rem; 
+    background-color: #fff;
+    box-shadow: 0px 1px 12px 0px #1D1D1D1A;
+    border-radius: 1rem; 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.get_red_rail_app_text{
+    width: 790px;
+
+    h1{
+        color: #1d1d1d;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+    }
+    p{
+        color: #1d1d1da3; 
+        font-size: 14px;
+        font-weight: 400; 
+        line-height: 1.25rem;
+    }
+}
+
+.train_get_app_download{
+    width: 18.75rem;
+   
+}
+.train_app_download{
+    color: #1d1d1d; 
+    width: 100%;
+    width: 100%; 
+    font-size: 14px; 
+    font-weight: 700;
+    line-height: 1.25rem;
+    cursor: pointer;
+    background-color: #fed9d5;
+    border-radius: 999px;
+    border: none; 
+    height: 3rem;   
+}
+
+
+/* .most_book_train{
+    padding: 0 2rem;
+} */
+
+.most_booked_train{
+    border: 1px solid #b0b0b0;
+    border-radius: 1rem;
+}
+
+.most_booked_train_header{
+    padding: .75rem 1rem; 
+    font-size: 22px; 
+    color: #1d1d1d; 
+    font-weight: 700;
+}
+
+.most_booked_train_content{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem; 
+    border-bottom: 1px solid #b0b0b0; 
+    
+
+    p{
+        color: #1d1d1d;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        margin: 1rem 0;
+    }
+}
+
+/* .about_user_rail{
+    padding: 0 1rem;
+} */
+
+.about_user_rail_box{
+    padding: .5rem 0rem; 
+    display: flex;
+    gap: .75rem;
+}
+
+.about_user_rail_box_item{
+    padding: 1.25rem;
+    height: 10rem;
+    width: 210px; 
+    border: 1px solid #e5e5e5;
+    border-radius: 1rem;
+    opacity: .8; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #1d1d1d;
+    font-size: 14px; 
+
+    .about_user_text1{
+        
+        font-size: 400;
+        line-height: 1.25rem;
+    }
+
+    .about_user_text2{
+        font-weight: 700;
+        line-height: 1.25rem;
+    }
+}
+
+.irctc_train_ticket_bokking_red_rail_pera{
+    color: rgba(29,29,29,.639);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25rem;
+    text-align: justify;
+    letter-spacing: -.08px;
+}
+
+.train_booking_guide{
+    background-color: #f2f2f8; 
+    /* width: 100vw; */
+}
+
+.step_by_step_guide{
+    margin: auto;
+    width: 1280px;
+    padding: 0 2rem;
+}
+
+.red_rail_booking_guide_box{
+    padding: 2rem 3rem;
+    display: flex; 
+    gap: 1.5rem;
+}
+
+.train_guide_mobile_img{
+    width: 221px;
+    height: 426px; 
+} 
+
+.train_guide_box{ 
+    display: flex;
+    flex-direction: column; 
+    gap: 12px;
+    justify-content: center;
+
+}
+.train_mobile_step_by_step{
+    background-color: #fff;
+    border: 1px solid #b0b0b0;
+    cursor: pointer;
+    padding: 1rem; 
+    width: 875px;
+    border-radius: 12px;
+}
+
+.mobile_summary{
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.25rem; 
+    padding-bottom: 5px;
+    display: flex;
+    gap: 4px;
+
+    span{
+        color: #d63941;
+    }
+}
+/* .choose_redRail_ticket_box_text{
+    
+    ul{
+        margin-top: 14px;
+        padding-left: 40px; 
+
+        li{
+            list-style: disc;
+        }
+        
+    }
+} */
+.train_list{
+    margin: 14px 0px;
+        padding-left: 40px; 
+
+        li{
+            list-style: disc;
+        }
+
+}
+
+.train_a{
+    color: blue;
+    text-decoration: underline blue;
+}
+
+.train_table{ 
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    border-collapse: collapse; 
+    width: 100%;
+    margin-top: 1rem;
+    color: #1d1d1d; 
+    
+   
+
+    
+    th,td{
+        text-align: start;
+        border: 1px solid #E5E5E5;
+        padding: 14px;
+        
+        
+    }
+    th{
+        background-color: #F2F2F8;
+    }
+} 
+
+.faq_details_train{
+    color: #1d1d1d;
+    cursor: pointer; 
+    
+}
+
+.train_faq{
+    padding: .8rem 0;
+    border-bottom: 1px solid #e5e5e5;
+    summary{
+        font-size: 1rem;
+        font-weight: 500;
+       
+    }
+    p{
+        margin: 6px 0px;
+        font-size: 14px ;
+        color: #1d1d1da3
+        
+    };
+
+}
+
+
+.train_faq summary::after{ 
     content: ">"; 
     transform: rotate(90deg);
     float: right; 
@@ -1183,47 +2053,141 @@ details>p>a{
     
 }
 
-.footer_heading details[open] summary::after{
+.train_faq[open] summary::after{
     content: ">";
     font-size: 16px;
     transform: rotate(270deg); 
 }
 
-/* train ticket start  */
-.train_header{
-    width: 1280px; 
-    margin: auto;
-    /* background-coor: rgb(255, 242, 0); */
-    padding: 0px 32px; 
+
+.red_rail_featured{
+    display: flex; 
+    gap: 1rem;
+}
+
+.red_rail_featued_img{
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    height: 4rem;
+    width: 4rem;
+    object-fit: contain;
+}
+
+.redRail_blogs{
+    margin-top: 1rem;
     display: flex;
+    gap: .75rem;
 } 
 
-.train_header> :nth-child(1){
-    margin-right: 2rem;
-    width: fit-content;
-} 
+.redRail_blogs_img{
+    height: 4rem;
+    width: 5rem;
+    img{
+        border-radius: 8px;
+        /* object-fit: contain; */
 
-.train_bus{
+   }
+
+}
+
+.redRail_blogs_text{
+    font-size: 14px;
+
+    h4{
+        color: #1d1d1d;
+        font-weight: 700;
+        line-height: 1.25rem;
+
+    }
+    p{
+        color: rgba(29,29,29,.639);
+        font-weight: 400; 
+        line-height: 1.25rem;
+        margin: .25rem 0 0 ;
+    }
+}
+
+.footer_heading  details{
+    cursor: pointer;
+}
+
+.train_footer_summary{
+    font-size: 16px;
+}
+
+.footer_train_link{
     display: flex;
+    flex-wrap: wrap; 
+
+    .footer_train_a{
+        color: #4040f2;
+        line-height: 1.25rem;
+        font-size: 13px;
+        font-weight: 700;
+        height: 3rem;
+        cursor: pointer;
+        padding: 0 1.25rem; 
+        display: flex;
+        align-items: center; 
+        text-decoration: underline #4040f2;
+        transition: 0.1ms;
+    } 
+    .footer_train_a:hover{
+        background-color: rgb(215, 215, 255);
+        border-radius: 999px; 
+        
+        
+        
+    }
+
+}
+
+.train_footer_middle{
+    margin-top: 1.5rem;
+    display: flex; 
+    justify-content: space-between;
+    text-align: center;
+} 
+.train_footer_middle_head{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: .5rem 1rem;
+}
+
+.train_footer_middle_link{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 4rem;
-    margin-right: 1rem;
-    width: 6.625rem;
-    color: #000;
-    transition: 0.2s;
-}
-.train_bus img{
-    filter: brightness(0) invert(0);
-}
-.train_bus:hover img{
-    filter: brightness(1) invert(0);
 }
 
-.train_bus:hover{
-    color: #d63941;
+.footer_train_middle_a{
+    color: #4040f2;
+    line-height: 1.25rem;
+    font-size: 14px; 
+    font-weight: 700;
+    height: 3rem;
+    cursor: pointer;
+    padding: 0 1.25rem; 
+    display: flex;
+    align-items: center; 
+    text-decoration: underline #4040f2;
+    transition: 0.1ms;
 }
 
+.footer_train_middle_a:hover{
+    background-color: rgb(215, 215, 255);
+    border-radius: 999px; 
+}
 
+.train_footer_lasst{
+    margin-top: 56px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e5e5; 
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
 /* train ticket end */
